@@ -1,0 +1,35 @@
+@import "assets/styles/mixins.scss";
+
+.tag {
+  color: $black-lighten;
+  line-height: 2;
+  display: inline-block;
+  width: rem(125);
+  padding: 0 rem(15);
+  background: $gray-lighten-more;
+  border: rem(1) solid $gray-border;
+  border-radius: rem(4);
+  text-transform: uppercase;
+}
+
+.role {
+  color: $blue;
+  border: none;
+  text-transform: capitalize;
+  background: transparent;
+  padding: 0;
+}
+
+.active,
+.ready,
+.completed {
+  color:$success;
+  background: $successBg-lighten-more;
+  border-color: $success;
+}
+.inactive,
+.dropped {
+  color: $danger;
+  border-color: $dangerBg-lighten;
+  background: $dangerBg-lighten-more;
+}

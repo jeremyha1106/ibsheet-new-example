@@ -1,0 +1,17 @@
+@import 'assets/styles/mixins.scss';
+
+.search {
+  width: rem(300) !important;
+}
+
+.avatar {
+  font-size: rem(25);
+}
+
+.projectNameBtn {
+  border: none;
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
+}

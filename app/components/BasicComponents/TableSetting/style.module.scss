@@ -1,0 +1,8 @@
+@import 'assets/styles/mixins.scss';
+
+.tableSettingMenu {
+  li[role='menuitem']:not(:last-child) {
+    margin-bottom: 0;
+    height: rem(30);
+  }
+}

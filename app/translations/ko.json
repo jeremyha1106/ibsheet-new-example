@@ -1,0 +1,262 @@
+{
+  "userExist": "Username already exists",
+  "emailExist": "Email already exists",
+  "validatePasswordContain": "Must be in 8-20 characters and must contain at least one letter, one number, one special character",
+  "validatePasswordSpace": "Your password can't start or end with a blank space",
+  "validateUserNameWithPeriods": "Username can't start or end with a periods (.)",
+  "validateUserNameContainConsecutivePeriods": "Sorry, username cannot contain consecutive periods(.)",
+  "validateUserNameWithSpecialCharacter": "Sorry, only letters (a-zA-Z), numbers(0-9), periods(.) are allowed.",
+  "validateUserNameLength": "Username must be between 4 and 30 characters long",
+  "validateEmail": "This is not a valid email address",
+  "error.email.username.existed": "Email or Username is already in use!",
+  "error.auth.forbidden": "Sorry, You are not allowed to access this page",
+  "error.file.size": "Image must smaller than 2MB!",
+  "error.file.type": "The image type should be JPG / JPEG / PNG !",
+  "topBar.profileMenu.hello": "Hello",
+  "topBar.profileMenu.role": "Role",
+  "topBar.profileMenu.email": "Email",
+  "topBar.profileMenu.editProfile": "Edit Profile",
+  "topBar.profileMenu.logout": "Logout",
+  "topBar.actions": "Actions",
+  "topBar.status": "Status",
+  "menu": {
+    "scheduler": "Scheduler",
+    "project": "Project"
+  },
+  "common": {
+    "label.language": "Language",
+    "label.nodata": "No data",
+    "label.unAssign": "Unassigned",
+    "title.template": "Meta Test",
+    "table.noData": "There are no data",
+    "table.showingText": "Showing",
+    "table.itemText": "Item",
+    "table.column.no": "No.",
+    "table.column.avatar": "Avatar",
+    "button.save": "Save",
+    "button.delete": "Delete",
+    "button.register": "Register",
+    "button.confirm": "Confirm",
+    "button.close": "Close",
+    "button.add": "Add",
+    "button.cancel": "Cancel",
+    "button.submit": "Submit",
+    "button.login": "Login",
+    "button.search": "Search",
+    "button.clear": "Clear",
+    "button.reset": "Reset",
+    "button.yes": "Yes",
+    "button.no": "No",
+    "button.new": "New",
+    "button.execute": "Execute",
+    "button.copy": "Copy",
+    "form.validate": {
+      "minimum": "{field} must be bigger than {length} characters",
+      "maximum": "{field} must be smaller than {length} characters",
+      "exceedsLength": "The text entered exceeds the maximum length",
+      "confirmPassword": "Confirm password does not match with New password"
+    },
+    "form.isRequired": "{field} is required",
+    "form.isNotValid": "This input is not valid {field}",
+    "form.field.label": {
+      "name": "Name",
+      "age": "Age",
+      "address": "Address",
+      "city": "City",
+      "province": "Province",
+      "priority": "Priority",
+      "email": "Email",
+      "password": "Password",
+      "phoneNumber": "Phone",
+      "url": "url",
+      "username": "Username",
+      "title": "Title",
+      "role": "Role",
+      "rememberMe": "Remember Me",
+      "forgotPassword": "Forgot password?",
+      "keyword": "Keyword"
+    },
+    "create.project.form": {
+      "label": {
+        "projectName": "Project Name",
+        "projectKey": "Project Key",
+        "projectLead": "Project Lead",
+        "jiraUrl": "Jira URL",
+        "status": "Status"
+      },
+      "placeholder": {
+        "jiraUrl": "http://jiravn.koreacentral.cloudapp.azure.com:8080/browse/"
+      }
+    },
+    "status.onHold": "On Hold",
+    "status.inactive": "Inactive",
+    "status.active": "Active",
+    "status.completed": "Completed",
+    "status.notStarted": "Not Started",
+    "status.executing": "Executing",
+    "status.ready": "Ready",
+    "status.draft": "Draft",
+    "status.dropped": "Dropped"
+  },
+  "notification": {
+    "created.success": "{name} created successfully",
+    "created.exist": "{name} name already exists",
+    "update.success": "{name} modified successfully",
+    "delete.success": "{name} deleted successfully",
+    "dropp.success": "{name} dropped successfully",
+    "changedPassword.success": "Changed password successfully",
+    "updatedPassword.success": "New password is updated successfully",
+    "resetPassword.success": "Password is reset successfully",
+    "error": "Error",
+    "confirmSave": "Are you sure to SAVE?",
+    "confirmCancel": "Are you sure to Cancel?",
+    "selectNone": "No item selected!",
+    "noDataSave": "No data is saved!",
+    "deleteTestPlan.error": "Cannot delete the selected test plan because there is a test execution linked to the test plan."
+  },
+  "login": {
+    "form.invalid.field": "Please input {field} data.",
+    "form.error.invalidCredential": "Invalid Username And Password",
+    "footer.copyright": "© 2020 Metanet. All rights reserved."
+  },
+  "error": {
+    "common.internal.server": "There is an error in logging in you into this application. Please try again later",
+    "auth.bad.credential": "The Username or Password is incorrect",
+    "api.networkError": "Server is timeout/down",
+    "api.genericBadRequestError": "The form contains some invalid fields. Please check your form over again.",
+    "current.password.not.correct": "Current password is not correct",
+    "common.notfound": "Data not found",
+    "invalid.test.execution": "Data not found",
+    "user.notfound": "User not found"
+  },
+  "validation": {
+    "testcase.in.executing.testExecution": "Cannot delete this item, it belongs to a running cycle",
+    "project.key.already.exist": "This key is already in use. Please choose a different key",
+    "max.length": "The text entered exceeds the maximum length",
+    "suite.name.already.exist": "Test execution name already exists"
+  },
+  "modal": {
+    "assignUser": {
+      "title": "Add member to",
+      "label.userName": "Username",
+      "label.name": "Name",
+      "label.nickname": "Nickname",
+      "label.email": "Email",
+      "label.title": "Job Title",
+      "label.role": "Role",
+      "button.save": "Save",
+      "search": {
+        "placeholder": "Search for users"
+      }
+    },
+    "inactive": {
+      "title": "{status} Project",
+      "content": "Are you sure you want to {status} {projectName}?"
+    },
+    "confirmChange": "Are you sure you want to save this change?"
+  },
+  "403": {
+    "subTitle": "Sorry, you are not authorized to access this page",
+    "label.button": "Back to login"
+  },
+  "404": {
+    "subTitle": "Sorry, the page you visited does not exist.",
+    "label.button": "Back home"
+  },
+  "user": {
+    "user": "User",
+    "userName": "Username",
+    "password": "Password",
+    "nickname": "Nickname",
+    "name": "Name",
+    "email": "Email",
+    "title": "Job Title",
+    "role": "Role",
+    "newUser": "New User",
+    "editUser": "Edit User",
+    "button.save": "Save",
+    "button.cancel": "Cancel",
+    "confirm": {
+      "save": "Do you want to save this user?",
+      "cancel": "Do you want to cancel add this user?",
+      "delete": "Are you sure you want to delete this user?"
+    }
+  },
+  "projectManagement": {
+    "label.project": "Project",
+    "label.projectName": "Project Name",
+    "label.userName": "UserName",
+    "label.name": "Name",
+    "label.nickname": "Nickname",
+    "label.jobTitle": "Job Title",
+    "label.role": "Role",
+    "label.key": "Key",
+    "label.lead": "Project Lead",
+    "label.jiraUrl": "Jira Url",
+    "label.status": "Status",
+    "create.project": "New Project",
+    "edit.project": "Edit Project",
+    "access.project": "Access Project",
+    "member.project": "Project Members",
+    "label.action": "Actions",
+    "label.totalText": "Total",
+    "title": "Project Management",
+    "title.assign.user": "Assign User",
+    "search.placeholder": "Search for projects",
+    "button.newProject": "New Project",
+    "button.newUser": "New User",
+    "button.assignUser": "Assign User",
+    "button.addMember": "Add Member",
+    "button.deactivate": "Deactivate",
+    "button.active": "Active",
+    "button.edit": "Edit",
+    "modal.leave.edit": "Do you want to cancel editing this project?",
+    "modal.leave.create": "Do you want to cancel creating this project?"
+  },
+
+  "scheduler": {
+    "event.moved": "Event moved",
+    "event.resized": "Event resized",
+    "event.edit": "Edit",
+    "event.delete": "Delete",
+
+    "label.start": "Start",
+    "label.end": "End",
+    "label.lunchBreak": "Lunch Break",
+    "label.newEvent": "New event name",
+    "label.resources": "Resources",
+    "label.total": "Total",
+    "label.projectView": "Project View",
+    "label.currentMonth": "Current Month",
+    "label.bulkUpdate": "Bulk Update",
+    "label.percentage": "Percentage",
+    "label.assign": "Assign",
+    "label.export": "Export",
+    "label.month": "Month",
+    "label.week": "Week",
+    "label.day": "Day",
+    "label.dateRange": "Date range",
+    "label.projects": "Projects",
+    "label.customRange": "Custom Range",
+    "label.currentFilters": "Current filters",
+    "label.billableStatus": "Billable status",
+    "label.projectStatus": "Project status",
+ 
+    "placeholder.search": "Search or filter",
+    "placeholder.selectProject": "Select project",
+
+    "notification.created": "Created event successfully",
+
+    "filter": {
+      "selectYear": "Select year",
+      "calendarView": "Calendar view",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "all": "All",
+      "yes": "Yes",
+      "no": "No",
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  }
+}

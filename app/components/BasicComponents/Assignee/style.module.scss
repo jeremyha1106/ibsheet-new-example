@@ -1,0 +1,10 @@
+@import 'assets/styles/mixins.scss';
+
+.assignee {
+  width: rem(200) !important;
+  margin: 0 rem(10);
+}
+
+.applyButton {
+  margin-right: rem(10);
+}

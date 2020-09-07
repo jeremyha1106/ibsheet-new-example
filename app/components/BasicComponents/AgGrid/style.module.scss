@@ -1,0 +1,20 @@
+@import 'assets/styles/mixins.scss';
+
+.agTable {
+  height: 100%;
+  width: 100%;
+  :global(.ag-root-wrapper) {
+    border: none;
+  };
+  :global(.ag-header-cell-text) {
+    font-size: 14px !important;
+  }
+  :global(.ag-header-cell-label){
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight:500
+  };
+  :global(.ag-cell){
+    padding-top: 7px;
+  }
+}

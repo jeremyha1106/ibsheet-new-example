@@ -1,0 +1,15 @@
+// Import mixins
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN INPUT */
+
+.ant-input-disabled {
+  background: $gray-lighten-more-more;
+}
+
+.ant-input-number-disabled {
+  .ant-input-number-input {
+    color: rgba(0, 0, 0, 0.25);
+  }
+}

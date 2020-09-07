@@ -1,0 +1,32 @@
+@import 'assets/styles/mixins.scss';
+
+.form {
+  :global {
+    .ant-form-item-label {
+      label {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.stepTableBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.formBody {
+  padding-bottom: 1rem;
+}
+
+.formFooter {
+  position: fixed;
+  padding: 0 1.5rem;
+  right: 0;
+  bottom: 0;
+  width: rem(800);
+  line-height: 3.8rem;
+  border-top: 1px solid $gray-7;
+  background-color: $gray-lighten-more;
+}

@@ -1,0 +1,208 @@
+// Colors
+$white: #fff;
+$black: #141322;
+$black-2: #333;
+$blue: #4b7cf3;
+$blue-light: #42baf9;
+$blue-dark: #2c60e4;
+
+$gray-1: #f2f4f8;
+$gray-2: #e4e9f0;
+$gray-3: #d9dee9;
+$gray-4: #c8c4db;
+$gray-5: #a1a1c2;
+$gray-6: #595c97;
+$gray-7: #e8e8e8;
+$yellow: #ff0;
+$orange: #faad15;
+$red: #f5222e;
+$red-2: #fb434a;
+$pink: #fd3995;
+$purple: #652eff;
+$green: #41b883;
+$slate-gray: #657a8e;
+
+$text: $gray-6;
+$border: $gray-2;
+// 2.0 Color
+$text-lighten: #c0bdd0;
+$text-darken: #615d7c;
+$text-darken-more: #514d6a;
+$black: #0e0b20;
+$black-lighten: #222034;
+$black-lighten-more: #393749;
+$gray: #d2d9e5;
+$gray-lighten: #eef0f4;
+$gray-lighten-more: #f2f4f8;
+$gray-lighten-more-more: #f9fafc;
+$gray-darken: #b8beca;
+$gray-darken-more: #00000073;
+$gray-border: #e4e9f0;
+$gray-disable: #f5f5f5;
+$menuBg: #001529;
+$menuBg-darken: #000c17;
+$table-header-bg: #f0f2f4;
+
+$success-lighten: #52c41a;
+$successBg-lighten: #b7eb8f;
+$successBg-lighten-more: #f6ffed;
+
+$dangerBg-lighten: #ffbb96;
+$dangerBg-lighten-more: #fff2e8;
+
+$infoBg-lighten: #adc6ff;
+$infoBg-lighten-more: #f0f5ff;
+
+// Accent colors
+$default: $gray-4;
+$primary: $blue;
+$secondary: $green;
+$success: $green;
+$info: $blue-light;
+$warning: $orange;
+$danger: $red;
+$light: $gray-1;
+$dark: $black;
+
+// dark theme
+$dark-gray-1: #aeaee0;
+$dark-gray-2: #7575a3;
+$dark-gray-3: #4f4f7a;
+$dark-gray-4: #232135;
+$dark-gray-5: #141322;
+$dark-gray-6: #0c0c1b;
+
+// Font Family
+$base__font-family: 'Oxygen', sans-serif !important;
+$base-font-family: var(--kit-font-family);
+$font-icon-family: 'SimSun, sans-serif';
+// Font Size
+$base-font-size: 15 !default;
+
+// Shadows
+$shadow: 0 0 40px -10px rgba($black, 0.2);
+$shadow-2: 0 4px 38px 0 rgba($black, 0.11), 0 0 21px 0 rgba($black, 0.05);
+$shadow-3: 0 0 100px -30px rgba(57, 55, 73, 0.3);
+$shadow-4: 0 4px 10px 0 rgba($black, 0.03), 0 0 10px 0 rgba($black, 0.02);
+$shadow-5: 0 0 40px -10px rgba($black, 0.4);
+$shadow-ant: 0 10px 35px -5px rgba(0, 0, 0, 0.15);
+
+// Convert value of rem() sass mixin function
+@function rem($px, $base: $base-font-size) {
+  @return #{floor(($px/$base) * 100) / 100}rem; // to REMs
+  // @return #{$px}px; // to PX's
+}
+
+// Transitions
+@mixin transition-bg() {
+  transition: background 0.2s ease-in-out;
+}
+@mixin transition-color() {
+  transition: color 0.2s ease-in-out;
+}
+@mixin transition-fast() {
+  transition: all 0.05s ease-in-out;
+}
+@mixin transition-middle() {
+  transition: all 0.1s ease-in-out;
+}
+@mixin transition-slow() {
+  transition: all 0.2s ease-in-out;
+}
+
+// Responsive utils
+$xxl-min-width: 1600px;
+$xxl-max-width: 1599px;
+$xl-min-width: 1200px;
+$xl-max-width: 1199px;
+$lg-min-width: 992px;
+$lg-max-width: 991px;
+$md-min-width: 768px;
+$md-max-width: 767px;
+$sm-min-width: 576px;
+$sm-max-width: 575px;
+// 2.0 size
+$md-min-width: 992px;
+$md-max-width: 991px;
+$sm-min-width: 768px;
+$sm-max-width: 767px;
+$xs-min-width: 576px;
+$xs-max-width: 575px;
+
+// // Colors
+// $white: #fff;
+
+// $text: #74708d;
+// $text-lighten: #c0bdd0;
+// $text-darken: #615d7c;
+// $text-darken-more: #514d6a;
+
+// $gray: #d2d9e5;
+// $gray-lighten: #eef0f4;
+// $gray-lighten-more: #f2f4f8;
+// $gray-lighten-more-more: #f9fafc;
+// $gray-darken: #b8beca;
+// $gray-border: #e4e9f0;
+
+// $black: #0e0b20;
+// $black-lighten: #222034;
+// $black-lighten-more: #393749;
+
+// $blue: #08f;
+// $blue-darken: #0072d6;
+// $orange: #f2a654;
+// $yellow: yellow;
+
+// $menuBg: #001529;
+// $menuBg-darken: #000c17;
+
+// // Accent colors
+// $default: #acb7bf;
+// $primary: #0190fe;
+// $secondary: #6a7a84;
+// $success: #46be8a;
+// $info: #0887c9;
+// $warning: #f39834;
+// $danger: #fb434a;
+
+// // Font Family
+// $base__font-family: 'Mukta', sans-serif !important;
+
+// // Font Size
+// $base__font-size: 13 !default;
+
+// // Convert value rem() sass mixin
+// @function rem($px, $base: $base__font-size) {
+//   @return #{floor(($px/$base) * 100) / 100}rem; // to REMs
+//   // comment code above and uncomment below for change REMs to PXs
+//   //@return #{$px}px;
+// }
+
+// // Transitions
+// @mixin transition-fast() {
+//   transition: all 0.05s ease-in-out;
+// }
+// @mixin transition-middle() {
+//   transition: all 0.1s ease-in-out;
+// }
+// @mixin transition-slow() {
+//   transition: all 0.2s ease-in-out;
+// }
+// @mixin transition-very-slow() {
+//   transition: all 0.4s ease-in-out;
+// }
+// @mixin transition-color() {
+//   transition: color 0.2s ease-in-out;
+// }
+
+// // Responsive utils
+// $xxl-min-width: 1600px;
+// $xxl-max-width: 1599px;
+// $xl-min-width: 1200px;
+// $xl-max-width: 1199px;
+// $md-min-width: 992px;
+// $md-max-width: 991px;
+// $sm-min-width: 768px;
+// $sm-max-width: 767px;
+// $xs-min-width: 576px;
+// $xs-max-width: 575px;

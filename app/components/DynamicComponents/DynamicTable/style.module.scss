@@ -1,0 +1,42 @@
+@import 'assets/styles/mixins.scss';
+
+.headerText {
+  display: inline-block;
+  margin-bottom: rem(15);
+}
+
+.hiddenHeader {
+  thead {
+    display: none;
+  }
+}
+
+:global {
+  thead th {
+    text-transform: uppercase;
+  }
+  .ant-table-filter-dropdown {
+    max-height: rem(350);
+    overflow: auto;
+  }
+  .ant-table-thead > tr > th.ant-table-column-sort {
+    background: #e7e9ea;
+  }
+  .ant-table-filter-dropdown .ant-dropdown-menu {
+    max-height: unset;
+  }
+  .ant-table-filter-dropdown-btns {
+    height: rem(45);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .confirm {
+      color: $blue;
+      &:hover {
+        color: $blue-light;
+      }
+    }
+  }
+}

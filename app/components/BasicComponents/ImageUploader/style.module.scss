@@ -1,0 +1,66 @@
+@import 'assets/styles/mixins.scss';
+
+:global(.avatar-uploader) {
+  :global(.ant-upload.ant-upload-select-picture-card) {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 100%;
+    padding: 0;
+    border-color: $gray-darken;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+      width: 100% !important;
+      margin: auto;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    :global(.ant-upload) {
+      padding: 0 !important;
+    }
+  }
+}
+
+
+.size20 {
+  width: rem(20);
+  height: rem(20);
+}
+
+.size25 {
+  width: rem(25);
+  height: rem(25);
+}
+
+.size50 {
+  width: rem(50);
+  height: rem(50);
+}
+
+.size70 {
+  width: rem(70);
+  height: rem(70);
+}
+
+.size90 {
+  width: rem(90);
+  height: rem(90);
+}
+
+.size110 {
+  width: rem(110);
+  height: rem(110);
+}
+
+.size200 {
+  width: rem(200);
+  height: rem(200);
+}
+
+.border {
+  border: 4px solid $gray;
+}

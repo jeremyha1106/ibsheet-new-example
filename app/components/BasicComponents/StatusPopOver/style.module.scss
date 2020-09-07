@@ -1,0 +1,61 @@
+@import 'assets/styles/mixins.scss';
+
+.statPop {
+  :global(.ant-popover-inner) {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    font-weight: 500;
+  }
+  :global(.ant-popover-arrow) {
+    border-top-color: transparent;
+    border-right-color: rgba(0, 0, 0, 0.9) !important;
+    border-bottom-color: rgba(0, 0, 0, 0.9) !important;
+    border-left-color: transparent;
+  }
+  :global(.ant-popover-inner-content) {
+    color: #fff;
+  }
+}
+.bigDot {
+  height: 12px;
+  width: 12px;
+  left: 0px;
+  top: 0px;
+  border-width: 0px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3px;
+  border-style: solid;
+}
+.colpassed {
+  background: #6adc84;
+  color: #6adc84;
+}
+.colfailed {
+  background: #f3657b;
+  color: #f3657b;
+}
+.colblocked {
+  background: #c0a6e4;
+  color: #c0a6e4;
+}
+.colskipped {
+  background: #fcd54b;
+  color: #fcd54b;
+}
+.coluntested {
+  background: #afafaf;
+  color: #afafaf;
+}
+
+.sm {
+  width: rem(120);
+}
+.md {
+  width: rem(220);
+}
+.xl {
+  width: rem(360);
+}

@@ -1,0 +1,17 @@
+@import 'assets/styles/mixins.scss';
+
+.modal {
+  width: rem(800) !important;
+}
+
+.link {
+  li {
+    color: $gray-6;
+  }
+  a {
+    color: $gray-6;
+    &:hover {
+      color: $gray-6;
+    }
+  }
+}

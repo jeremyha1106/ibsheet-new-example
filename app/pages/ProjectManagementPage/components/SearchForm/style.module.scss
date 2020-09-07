@@ -1,0 +1,9 @@
+.searchForm {
+  display: flex;
+  height: 40px;
+  :global {
+    .ant-form-item-control {
+      line-height: 1;
+    }
+  }
+}

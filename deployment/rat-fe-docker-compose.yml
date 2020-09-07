@@ -1,0 +1,8 @@
+version: '2.0'
+services:
+  rat-fe:
+    ports:
+    - "${PORT}:${PORT}"
+    image: ${IMAGE}
+    network_mode: host
+    restart: always

@@ -1,0 +1,42 @@
+@import 'assets/styles/mixins.scss';
+.createAvatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonDrawer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 1rem;
+  border-top: 1px solid $gray-7;
+  background-color: $gray-lighten-more;
+  z-index: 10;
+}
+.formUserProfile {
+  :global(.ant-input.ant-input-disabled) {
+    background-color: $gray-disable;
+  }
+}
+
+.formDrawer {
+  :global(.ant-form) {
+    padding-bottom: rem(50);
+  }
+  :global(.ant-drawer-title) {
+    font-weight: bold !important;
+    font-size: 1.35rem;
+  }
+  :global(.ant-drawer-header) {
+    position: fixed;
+    z-index: 9999;
+    width: rem(600);
+    background-color: $gray-lighten-more;
+  }
+  :global(.ant-drawer-body) {
+    padding-top: 6rem;
+  }
+}

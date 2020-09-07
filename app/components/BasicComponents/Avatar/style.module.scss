@@ -1,0 +1,45 @@
+@import 'assets/styles/mixins.scss';
+
+.avatar {
+  width: rem(35);
+  height: rem(35);
+  border-radius: 50%;
+  border-color: $gray-darken;
+  display: inline-block;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.rounded {
+  border-radius: 100%;
+}
+.squared {
+  border-radius: 15%;
+}
+
+.size15 {
+  width: rem(15);
+  height: rem(15);
+}
+
+.size24 {
+  width: rem(24);
+  height: rem(24);
+}
+
+.size36 {
+  width: rem(36);
+  height: rem(36);
+}
+
+.size48 {
+  width: rem(48);
+  height: rem(48);
+}
+
+.border {
+  border: 4px solid $gray;
+}

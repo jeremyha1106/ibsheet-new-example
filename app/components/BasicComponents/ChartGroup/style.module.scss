@@ -1,0 +1,99 @@
+@import 'assets/styles/mixins.scss';
+
+.rowHeight {
+  height: calc(100% - 2em);
+  min-width: rem(400);
+  min-height: rem(250);
+  :global(.ant-table-wrapper) {
+    margin-bottom: rem(25);
+  }
+  :global(.pieChart) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.chartWrap {
+  height: 100%;
+}
+
+.pieChart {
+  width: 100%;
+  height: calc(100% - 4em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > div {
+    width: 100%;
+    :global(.apexcharts-canvas) {
+      width: 100%;
+    }
+  }
+
+  :global(.apexcharts-legend) {
+    justify-content: center !important;
+    :global(.apexcharts-legend-series) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: rem(5) !important;
+    }
+    :global(.apexcharts-legend-text) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+  }
+}
+
+.columnChart {
+  :global(.apexcharts-legend) {
+    min-height: rem(60) !important;
+  }
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: rem(30);
+  height: rem(30);
+  border-radius: 100%;
+  background-color: $gray-3;
+  font-size: rem(15);
+}
+
+.avatarDefault {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: rem(30);
+  height: rem(30);
+  font-size: rem(28);
+}
+.noPadding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  [type='bar'] {
+    min-height: rem(50) !important;
+  }
+  :global(.apexcharts-inner) {
+    transform: translate(rem(0), rem(20)) !important;
+  }
+  :global(.apexcharts-tooltip) {
+    top: rem(-50) !important;
+  }
+  :global(.apexcharts-tooltip.apexcharts-theme-dark) {
+    padding-top: rem(6);
+  }
+}
+.noDataBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}

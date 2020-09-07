@@ -1,0 +1,15 @@
+@import 'assets/styles/mixins.scss';
+
+.searchComponentContainer {
+  display: flex;
+  align-items: center;
+}
+
+.typeSelect {
+  width: rem(100);
+  margin-right: 0.5rem;
+}
+
+.multiSelect {
+  margin-right: 0.5rem;
+}

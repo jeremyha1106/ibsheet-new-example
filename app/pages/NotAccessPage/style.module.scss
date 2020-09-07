@@ -1,0 +1,14 @@
+@import 'assets/styles/mixins.scss';
+
+.page {
+  max-width: rem(560);
+  padding: rem(80) rem(30);
+  margin: rem(50) auto;
+  border-radius: rem(10);
+  flex: 1;
+}
+
+.item {
+  max-width: rem(400);
+  margin: 0 auto;
+}
