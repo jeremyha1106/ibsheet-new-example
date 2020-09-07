@@ -13,3 +13,4 @@ export const UPDATE_PASSWORD_URL = '/update-password';
 
 export const SCHEDULER_URI = '/scheduler';
 export const PROJECT_URI = '/project';
+export const IBSHEET_URI = '/ib-sheet-example';
