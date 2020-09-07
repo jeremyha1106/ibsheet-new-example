@@ -50,11 +50,6 @@
     "> 1%",
     "IE 10"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint --staged"
-    }
-  },
   "lint-staged": {
     "*.js": [
       "npm run lint:eslint:fix",
