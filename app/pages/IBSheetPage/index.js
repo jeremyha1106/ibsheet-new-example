@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from 'components/BasicComponents/Button';
+import { FileExcelFilled } from '@ant-design/icons';
+import { Divider } from 'antd';
 import { Table } from './table';
 import { createData } from './helper';
 import { useIbsheet } from './hooks';
@@ -88,21 +91,32 @@ const SheetSample = () => {
   };
 
   return (
-    <div className="sample-sheet">
-      <Table
-        id="sheet-sample"
-        el="sheet-sample"
-        data={data}
-        options={options}
-      />
+    <div className="card">
+      <div className="card-body">
+        <h5 className="d-flex align-items-center pb-2 font-size-24">
+          <strong>IBSheet Example</strong>
+        </h5>
+        <Divider />
 
-      <div className="bottom-section">
-        <button type="button" className="btn" onClick={onDownExcel}>
-          Download excel
-        </button>
-        <button type="button" className="btn" onClick={onLoadExcel}>
-          Upload excel
-        </button>
+        <div className="inline-block float-right mb-2">
+          <Button
+            icon={<FileExcelFilled />}
+            onClick={onDownExcel}
+            style={{ marginRight: '1rem' }}
+          >
+            Export
+          </Button>
+          <Button icon={<FileExcelFilled />} onClick={onLoadExcel}>
+            Import
+          </Button>
+        </div>
+
+        <Table
+          id="sheet-sample"
+          el="sheet-sample"
+          data={data}
+          options={options}
+        />
       </div>
     </div>
   );

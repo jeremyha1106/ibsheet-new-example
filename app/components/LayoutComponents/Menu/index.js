@@ -82,7 +82,7 @@ class Menu extends React.PureComponent {
               getContainer={null}
               width={leftMenuWidth}
             >
-              {isAccessDashboard && <MenuLeftContainer />}
+              <MenuLeftContainer />
             </Drawer>
           </div>
         );
@@ -93,7 +93,7 @@ class Menu extends React.PureComponent {
       if (menuLayoutType === 'nomenu') {
         return null;
       }
-      return isAccessDashboard && <MenuLeftContainer />;
+      return <MenuLeftContainer />;
     };
 
     return MenuView();

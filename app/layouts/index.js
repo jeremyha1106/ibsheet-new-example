@@ -83,9 +83,9 @@ class IndexLayout extends React.PureComponent {
         return <Loader />;
       }
       // redirect to login page if current is not login page and user not authorized
-      if (!isLoginLayout && !isUserAuthorized) {
-        return <Redirect to={{ pathname: SIGNIN_URI }} />;
-      }
+      // if (!isLoginLayout && !isUserAuthorized) {
+      //   return <Redirect to={{ pathname: SIGNIN_URI }} />;
+      // }
       // redirect to main dashboard when user on login page and authorized
       if (isLoginLayout && isUserAuthorized) {
         // redirect to update password page because the status of user is inactive
